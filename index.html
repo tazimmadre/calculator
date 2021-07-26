@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Project</title>
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- This is custome stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Calculator wrap start -->
+    <div class="calculator">
+        <form action="" name="form" class="cal-form">
+            <input type="text" name="display" value="" placeholder="0" class="dispaly form-control">
+
+            <div class="button-area">
+                <div class="button-line">
+                    
+                    <input type="button" value="AC" name="btn" class="btn btn-success" onclick="display.value = null">
+                    <input type="button" value="/" name="btn" class="btn btn-success float-right" onclick="calculate(this.value)">
+                </div><!-- end button-line -->
+
+                <div class="button-line">
+                    <input type="button" value="7" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="8" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="9" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="*" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                </div><!-- end button-line -->
+
+                <div class="button-line">
+                    <input type="button" value="4" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="5" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="6" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="-" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                </div><!-- end button-line -->
+
+                <div class="button-line">
+                    <input type="button" value="1" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="2" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="3" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="+" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                </div><!-- end button-line -->
+
+                <div class="button-line">
+                    <input type="button" value="0" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="00" name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="." name="btn" class="btn btn-success" onclick="calculate(this.value)">
+                    <input type="button" value="=" name="btn" class="btn btn-success" onclick="display.value = eval(display.value)">
+                </div><!-- end button-line -->
+            </div><!-- end button area -->
+        </form><!-- end calculator form -->
+    </div>
+    <!-- end calculator-wrap -->
+
+
+
+
+
+
+
+    <script>
+        function calculate(c) {
+            form.display.value = form.display.value + c;
+        }
+    </script>
+
+
+
+
+
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
